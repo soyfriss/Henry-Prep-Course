@@ -1,0 +1,23 @@
+* Variables
+
+ Una variable es un apuntador a un espacio de memoria donde puedo guardar cosas (datos).
+ 
+
+* Strings
+
+ Un string es una cadena de caracteres. 
+ 
+
+* Funciones (argumentos, `return`)
+ 
+ Una función es un bloque de líneas de código que hacen algo; se la utiliza para reutilizar código y facilitar el mantenimiento del programa. Puede recibir datos de entrada, que se llaman argumentos, y puede devolver un valor por medio de la instrucción return.
+
+
+* Declaraciones `if`
+
+ IF es una estructura que permite definir caminos o rutas que, según las condiciones como puede ser la edad, estado civil, etc, el flujo de ejecución del programa irá por un camino o por otro.
+ 
+
+* Valores booleanos (`true`, `false`)
+
+ Un valor booleano puede tener 2 estados: verdadero o falso; al evaluar una expresión de comparación, por ejemplo a > b ?, se obtiene un valor verdadero o falso dependiendo de los valores de a y b.
