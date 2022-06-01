@@ -1,0 +1,18 @@
+* `for`
+
+ 'For' es un bucle que ejecuta n veces las líneas de código que estén dentro del bloque, hasta que una condición se evalúa a false. La sintaxis de este statement es:
+
+ for(var i=0 ; i < 100 ; i++) {
+ 	// código
+ }
+
+
+* `&&`, `||`, `!`
+
+ Los operados lógicos permiten combinar expresiones lógicas y se obtiene un valor booleano.
+
+ && es el operador AND, si los operandos tienen valor true el resultado será true, para el resto es false; ejemplo: (1 < 10) && (10 > 1) devuelve true.
+
+ || es el operador OR, si los operandos tienen valor false el resultado será false, para el resto es true; ejemplo: (1 < 1) || (1 > 1) devuelve false.
+
+ ! es el operador NOT, devuelve el valor opuesto del operando; ejemplo: !(1 < 1) devuelve true.
