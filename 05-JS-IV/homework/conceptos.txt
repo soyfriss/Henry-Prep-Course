@@ -1,0 +1,28 @@
+* Objetos
+
+ Un objeto es una colección de propiedades, y una propiedad es un par clave:valor donde la clave sería el nombre de la propiedad y el valor puede ser de cualquier tipo. Cuando el valor de la propiedad es una función se le llama método del objeto.
+
+
+* Propiedades
+
+ Se forma con un par clave:valor, la clave es un string y el valor puede ser cualquier tipo. Un objeto puede tener muchas propiedades, pero las claves no se pueden repetir en un mismo objeto.
+ 
+
+* Métodos
+
+ Cuando el valor de la propiedad es una función, se le llama método.
+
+* Bucle `for…in`
+
+ Este bucle permite recorrer las propiedades de un objeto. La sintaxis es:
+
+ for (let clave in objeto) {
+ 	// bloque
+ }
+
+
+* Notación de puntos vs notación de corchetes
+
+ Para acceder a la propiedad de un objeto por notación de puntos: objeto.nombre_propiedad, objeto.nombre_metodo().
+ Para acceder por notación de corchetes: objeto['nombre_propiedad'], objeto['nombre_metodo']().
+
