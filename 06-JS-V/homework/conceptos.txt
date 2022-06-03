@@ -1,0 +1,7 @@
+* `prototype`
+
+ Es una propiedad de las funciones constructoras que es un repositorio de métodos y propiedades que serán heredados.
+
+* _Constructors_ (de Clases)
+
+ Son las plantillas o moldes de los objetos que son instanciados por dichas plantillas. En las funciones constructoras se definen las propiedades y métodos que serán parte de las instancias cuando se crean con la palabra reservada 'new'.
