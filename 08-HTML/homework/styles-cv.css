@@ -1,0 +1,9 @@
+#foto {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+.etiqueta {
+	font-style: italic;
+	color: gray;
+}
