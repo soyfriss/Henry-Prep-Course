@@ -1,0 +1,3 @@
+* Funciones Callback
+
+ Cuando una función se pasa como argumento de otra se llama función callback. Los métodos forEach, map y reduce de Array utilizan funciones callback.
