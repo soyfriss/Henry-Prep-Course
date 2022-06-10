@@ -58,15 +58,15 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var palabra = '';
+  var frase = '';
   for (var i=0; i < palabras.length; i++) {
-    if (palabra == '') {
-      palabra = palabras[i];
+    if (frase == '') {
+      frase = palabras[i];
     } else {
-      palabra += ' ' + palabras[i];
+      frase += ' ' + palabras[i];
     }
   }
-  return palabra;
+  return frase;
 }
 
 
@@ -220,13 +220,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var nuevoArray = [];
+  var mayoresACien = [];
   for (var i=0; i < array.length; i++) {
     if (array[i] > 100) {
-      nuevoArray.push(array[i]);
+      mayoresACien.push(array[i]);
     }
   }
-  return nuevoArray;
+  return mayoresACien;
 }
 
 
@@ -243,6 +243,7 @@ function breakStatement(numero) {
     numero += 2;
     array.push(numero);
 
+    // Si la suma y la cantidad de iteraciones coinciden, interrumpo la ejecución
     if (numero == (i + 1)) {
       break;
     }
@@ -265,7 +266,7 @@ function continueStatement(numero) {
   var array = [];
   for (var i=0; i < 10; i++) {
     
-    if (i == 4) continue;
+    if (i == 4) continue; //Cuando el número de iteraciones = 5, no se suma en ese caso y se continua con la siguiente iteración
 
     numero += 2;
     array.push(numero);
