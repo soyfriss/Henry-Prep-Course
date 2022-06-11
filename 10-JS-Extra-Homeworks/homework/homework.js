@@ -12,11 +12,11 @@ function deObjetoAmatriz(objeto){
   //Escribe tu código aquí
   var keys = Object.keys(objeto);
   var values = Object.values(objeto);
-  var arreglo = [];
+  var array = [];
   for (var i=0; i < keys.length; i++) {
-    arreglo.push([keys[i], values[i]]);
+    array.push([keys[i], values[i]]);
   }
-  return arreglo;
+  return array;
 }
 
 
@@ -45,8 +45,8 @@ function capToFront(s) {
   //Escribe tu código aquí
   var letrasMayusculas = '';
   var letrasMinusculas = '';
-  var palabra = '';
   var letra = '';
+
   for (var i=0; i < s.length; i++) {
     letra = s[i];
     if (letra === letra.toUpperCase()) {
@@ -69,20 +69,19 @@ function asAmirror(str) {
   //Escribe tu código aquí
   var fraseInvertida = '';
   var palabras = str.split(' ');
-  var palabra = '';
 
-  for (var indicePalabra=0; indicePalabra < palabras.length; indicePalabra++) {
-    palabra = palabras[indicePalabra];
-
-    // Agrego los espacios entre palabras
-    if (indicePalabra > 0 || indicePalabra == palabras.length - 1) {
-      fraseInvertida += ' ';
-    }
+  // Recorro cada palabra de la frase recibida (array palabras)
+  // Invierto la palabra y la agrego a la frase nueva junto con los espacios entra cada palabra
+  palabras.forEach(function (palabra, indice) {
     // Invierto los caracteres de la palabra
     for (var i=palabra.length; i > 0; i--) {
       fraseInvertida += palabra[i - 1];
     }
-  }
+    // Agrego los espacios entre palabras salvo en la última palabra
+    if (indice != palabras.length - 1) {
+      fraseInvertida += ' ';
+    }
+  });
   return fraseInvertida;
 } 
 
@@ -138,15 +137,15 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí
-  var comunes = [];
+  var interseccion = [];
   arreglo1.forEach(function (a) {
     arreglo2.forEach(function (b) {
       if (a === b) {
-        comunes.push(a);
+        interseccion.push(a);
       }
     });
   });
-  return comunes;
+  return interseccion;
 }
 
 
